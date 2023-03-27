@@ -1,0 +1,45 @@
+.postContainer {
+  text-align: center;
+}
+.postContainer h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.postContainer h2 {
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+.postContainer h3 {
+  margin: 10px auto;
+  max-width: 600px;
+}
+.postContainer img {
+  max-width: 600px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+
+.postContainer .user {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+.postContainer .tags {
+  display: flex;
+  justify-content: center;
+}
+.tags p {
+  margin-right: 1em;
+}
+.tags span {
+  font-weight: bold;
+}
+
+.createdBy {
+  font-style: italic;
+  color: var(--buttonColor);
+  font-size: 0.8em;
+}

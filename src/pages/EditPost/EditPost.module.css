@@ -1,0 +1,14 @@
+.editPost {
+    text-align: center;
+}
+.editPost p {
+    color: var(--lighterBasicColor);
+}
+.editPost .previewTitle {
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+.imagePreview {
+    max-width: 100%;
+    margin-bottom: 1em;
+}

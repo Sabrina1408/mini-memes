@@ -1,0 +1,6 @@
+.createPost {
+    text-align: center;
+}
+.createPost p {
+    color: var(--lighterBasicColor);
+}
