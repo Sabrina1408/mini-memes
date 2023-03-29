@@ -23,6 +23,7 @@ import Search from "./pages/Search/Search";
 import Post from "./pages/Post/Post";
 import EditPost from "./pages/EditPost/EditPost";
 import ResetEmail from "./pages/Reset/ResetEmail";
+import FixedButton from "./components/FixedButton";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -46,6 +47,7 @@ function App() {
       <AuthContextProvider value={{ user }}>
         <BrowserRouter>
           <NavBar />
+          <FixedButton></FixedButton>
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />}></Route>

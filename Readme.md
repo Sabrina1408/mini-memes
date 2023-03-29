@@ -26,7 +26,7 @@
 <h2>👀 Problemas/Ideias/Fazer</h2>
 <h3>Problemas</h3>
 <ul>
-  <li>✔️ Todos resolvidos.</li>
+  <li>✔️ Novo post com erros de tratamento.</li>
 </ul>
 <h3>Ideias/Fazer</h3>
 <ul>

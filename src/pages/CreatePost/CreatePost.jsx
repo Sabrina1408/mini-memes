@@ -25,20 +25,30 @@ const CreatePost = () => {
 
     // Validar URL da imagem
     try {
-      new URL(image)
+      new URL(image);
     } catch (error) {
       setFormError("A imagem precisa ser uma URL.");
+      return;
     }
 
     // Criar Array de tags
     const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());
 
     // Checar todos os valores
-    if(!title || !image || !tags || !body) {
+    if (!title || !image || !tags || !body) {
       setFormError("Por favor, preencha todos os dados.");
+      return;
     }
 
-    if(formError) return;
+    if (
+      title.trim() === "" ||
+      image.trim() === "" ||
+      tags.trim() === "" ||
+      body.trim() === ""
+    ) {
+      setFormError("Por favor, não deixe só com espaços em branco.");
+      return;
+    }
 
     insertDocument({
       title,
@@ -46,7 +56,7 @@ const CreatePost = () => {
       body,
       tagsArray,
       uid: user.uid,
-      createdBy: user.displayName
+      createdBy: user.displayName,
     });
 
     // Redirect para a home page
@@ -103,7 +113,11 @@ const CreatePost = () => {
           />
         </label>
         {!response.loading && <button className="btn">Criar post!</button>}
-        {response.loading && <button className="btn" disabled>Aguarde...</button>}
+        {response.loading && (
+          <button className="btn" disabled>
+            Aguarde...
+          </button>
+        )}
         {response.error && <p className="error">{response.error}</p>}
         {formError && <p className="error">{formError}</p>}
       </form>
