@@ -1,29 +1,29 @@
 // CSS
-import styles from './Login.module.css';
-// React Router
-import { Link } from "react-router-dom";
+import styles from './ResetEmail.module.css';
 // Hooks
 import { useAuthentication } from "../../hooks/useAuthentication";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-const Login = () => {
+const ResetEmail = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   // Firebase
-  const {login, error: authError, loading} = useAuthentication();
-
+  const {emailReset, error: authError, loading} = useAuthentication();
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     const user = {
-      email,
-      password
+      email
     }
 
-    const res = await login(user);
+    const res = await emailReset(user);
     console.log(res);
+
+    !error && (
+      <p className={styles.success}>Email enviado com sucesso!</p>
+    );
   }
 
   // Mapear error
@@ -33,10 +33,10 @@ const Login = () => {
     }
   }, [authError]);
 
+
   return (
-    <div className={styles.login}>
-      <h1>Já tem cadastro?</h1>
-      <p>Faça seu login para compartilhar memes!</p>
+    <div className={styles.resetEmail}>
+      <h1>Informe um email para fazer o reset da senha.</h1>
       <form onSubmit={handleSubmit}>
         <label>
           <span>Email:</span>
@@ -49,19 +49,7 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <label>
-          <span>Senha:</span>
-          <input
-            type="password"
-            name="password"
-            required
-            placeholder="Insira sua senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
-        <Link to="/reset/email">Esqueceu sua senha?</Link>
-        {!loading && <button className="btn">Entrar</button>}
+        {!loading && <button className="btn">Enviar</button>}
         {loading && <button className="btn" disabled>Aguarde...</button>}
         {error && <p className="error">{error}</p>}
       </form>
@@ -69,4 +57,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default ResetEmail;

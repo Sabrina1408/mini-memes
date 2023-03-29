@@ -3,10 +3,12 @@
   --basicColor: rgba(255, 255, 255, 0.87);
   --lighterBasicColor: rgb(187, 187, 187);
   --globalBackground: #242424;
-  --secondaryBackground: rgba(53 53 53);
+  --secondaryBackground: rgb(152, 62, 62); /* rgba(53 53 53); */
   --tertiaryBackground: #292929;
-  --buttonColor: #646cff;
-  --buttonHoverColor: #535bf2;
+  --navColor: white; /* #646cff */
+  --navHoverColor: rgb(216, 216, 216); /* #535bf2 */
+  --buttonColor: rgb(219, 24, 24); /* #646cff */
+  --buttonHoverColor: rgb(175, 20, 20); /* #535bf2 */
   --buttonDanger: rgb(190, 0, 0);
 }
 

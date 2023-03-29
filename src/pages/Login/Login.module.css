@@ -7,3 +7,12 @@
 .login p {
     color: var(--lighterBasicColor);
 }
+.login a {
+    color: var(--basicColor);
+    margin-bottom: 30px;
+    text-align: left;
+    border-bottom: 1px solid var(--basicColor);
+}
+.login a:hover {
+    color: var(--lighterBasicColor);
+}

@@ -4,7 +4,7 @@
 <h2>🎯 Links</h2>
 <ul>
   <li>
-    <a href="#" target="_blank">Link do site</a>
+    <a href="https://nossarede.netlify.app" target="_blank">Link do site</a>
   </li>
   <li>
     <a href="https://www.udemy.com/share/106ezS3@yy2hCdMUGz87RDoySH2BOS60Gpa2vkXQG_MzO4gK9McxYY7vSD-YYgJI9B09QaITqw==/" target="_blank">Link do curso</a>
@@ -17,8 +17,11 @@
 <h2>🧐 Aprendizado</h2>
 <ul>
   <li>React.</li>
-  <li>Menu JS.</li>
-  <li>scroll-behavior: smooth; para transição no scroll.</li>
+  <li>useEffect e outros.</li>
+  <li>context</li>
+  <li>React Router</li>
+  <li>Firebase</li>
+  <li>Formulários</li>
 </ul>
 <h2>👀 Problemas/Ideias/Fazer</h2>
 <h3>Problemas</h3>
@@ -27,7 +30,7 @@
 </ul>
 <h3>Ideias/Fazer</h3>
 <ul>
-  <li>🕐 Botão de esqueceu sua senha.</li>
-  <li>🕐 Mudar tema do site.</li>
+  <li>✔️ Botão de esqueceu sua senha.</li>
+  <li>✔️ Mudar tema do site.</li>
 </ul>
 <!-- ❌ ✔️ 🕐 -->

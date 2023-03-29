@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <nav className={styles.navbar}>
       <NavLink to="/" className={styles.brand}>
-        Mini <span>Memes</span>
+      <span>NOSSA</span> Rede
       </NavLink>
       <ul className={styles.linksList}>
         <li>

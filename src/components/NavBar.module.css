@@ -6,6 +6,13 @@
     padding: .5em 2em;
     background-color: var(--secondaryBackground);
 }
+.navbar a, .navbar button {
+    color: var(--navColor);
+}
+.navbar a:hover, .navbar button:hover {
+    color: var(--navHoverColor);
+}
+
 .brand {
     font-size: 1.2em;
 }
@@ -21,11 +28,12 @@
     margin-right: 1em;
 }
 .linksList li a {
+    
     padding: .4em .6em;
 }
 
 .active {
     background-color: var(--tertiaryBackground);
-    color: var(--buttonHoverColor);
+    color: var(--navHoverColor);
     border-radius: 4px;
 }

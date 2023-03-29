@@ -5,6 +5,7 @@ import {
   signInWithEmailAndPassword,
   updateProfile,
   signOut,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 
@@ -89,6 +90,32 @@ export const useAuthentication = () => {
     }
   };
 
+  // Reset de email
+  const emailReset = async (data) => {
+    checkIfIsCancelled();
+    setLoading(true);
+    setError(false);
+
+    try {
+      await sendPasswordResetEmail(auth, data.email);
+      console.log("Email enviado");
+      setLoading(false);
+    } catch (error) {
+      // Tratar error pra português /* Mudar */
+      let systemErrorMessage;
+      if (error.message.includes("algo")) {
+        systemErrorMessage = "algo.";
+      } else if (error.message.includes("algoe")) {
+        systemErrorMessage = "algoe.";
+      } else {
+        systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde.";
+      }
+
+      setError(systemErrorMessage);
+      setLoading(false);
+    }
+  }
+
   useEffect(() => {
     return () => setCancelled(true);
   }, []);
@@ -100,5 +127,6 @@ export const useAuthentication = () => {
     loading,
     logout,
     login,
+    emailReset,
   };
 };

@@ -22,6 +22,7 @@ import CreatePost from "./pages/CreatePost/CreatePost";
 import Search from "./pages/Search/Search";
 import Post from "./pages/Post/Post";
 import EditPost from "./pages/EditPost/EditPost";
+import ResetEmail from "./pages/Reset/ResetEmail";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -56,7 +57,11 @@ function App() {
                 element={!user ? <Login /> : <Navigate to="/" />}
               />
               <Route
-                path="/edit/:id"
+                path="/reset/email"
+                element={!user ? <ResetEmail /> : <Navigate to="/" />}
+              />
+              <Route
+                path="/register"
                 element={!user ? <Register /> : <Navigate to="/" />}
               />
               <Route
