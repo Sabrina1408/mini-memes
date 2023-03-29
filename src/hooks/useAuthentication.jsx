@@ -103,10 +103,10 @@ export const useAuthentication = () => {
     } catch (error) {
       // Tratar error pra português /* Mudar */
       let systemErrorMessage;
-      if (error.message.includes("algo")) {
-        systemErrorMessage = "algo.";
-      } else if (error.message.includes("algoe")) {
-        systemErrorMessage = "algoe.";
+      if (error.message.includes("invalid-email")) {
+        systemErrorMessage = "Esse email não é valido.";
+      } else if (error.message.includes("user-not-found")) {
+        systemErrorMessage = "Não existe usuário com esse email.";
       } else {
         systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde.";
       }

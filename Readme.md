@@ -22,6 +22,7 @@
   <li>React Router</li>
   <li>Firebase</li>
   <li>Formulários</li>
+  <li>React-Scroll</li>
 </ul>
 <h2>👀 Problemas/Ideias/Fazer</h2>
 <h3>Problemas</h3>
@@ -32,5 +33,6 @@
 <ul>
   <li>✔️ Botão de esqueceu sua senha.</li>
   <li>✔️ Mudar tema do site.</li>
+  <li>✔️ Botão para subir a página.</li>
 </ul>
 <!-- ❌ ✔️ 🕐 -->

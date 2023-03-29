@@ -2,13 +2,13 @@
 import styles from "./FixedButton.module.css";
 // IMG
 import img from "../assets/img/up-icon.png";
-// React Router
-import { Link } from "react-router-dom";
+// React-scroll
+import { animateScroll as scroll } from 'react-scroll';
 
 const FixedButton = () => {
   return (
     <div className={styles.fixedButton}>
-      <Link to="/"><img src={img} alt="Ícone de subir" /></Link>
+      <button onClick={() => scroll.scrollToTop()}><img src={img} alt="Ícone de subir" /></button>
     </div>
   );
 };
