@@ -10,7 +10,7 @@
   margin-bottom:  1.5em;
 }
 
-.postHeader, .postRow {
+.postHeader {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -21,25 +21,40 @@
   border-bottom:  2px solid var(--basicColor);
 }
 
+.postContent {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
 .postRow {
+  display: flex;
   align-items: center;
-  border-bottom:  1px solid var(--secondaryBackground);
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
 }
 .postRow button, .postRow a {
   margin: 0 5px;
 }
-
-.postRowImgTitle {
-  display: flex;
-  gap: 20px;
-}
-.postRowImgTitle img {
-  max-width: 30px;
-}
-.postRowImgTitle p {
+.postRow p {
+  text-align: left;
+  max-width: 300px;
   color: var(--basicColor);
 }
+.postRow img {
+  width: 200px;
+  height: 200px;
+}
 
+.divBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
 
 .noPosts {
   text-align: center;

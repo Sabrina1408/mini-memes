@@ -57,10 +57,10 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="/dashboard"
+                to="/perfil"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
-                Dashboard
+                Perfil
               </NavLink>
             </li>
           </>

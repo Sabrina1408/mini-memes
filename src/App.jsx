@@ -17,7 +17,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Perfil from "./pages/Perfil/Perfil";
 import CreatePost from "./pages/CreatePost/CreatePost";
 import Search from "./pages/Search/Search";
 import Post from "./pages/Post/Post";
@@ -71,8 +71,8 @@ function App() {
                 element={user ? <EditPost /> : <Navigate to="/" />}
               />
               <Route
-                path="/dashboard"
-                element={user ? <Dashboard /> : <Navigate to="/" />}
+                path="/perfil"
+                element={user ? <Perfil /> : <Navigate to="/" />}
               />
               <Route
                 path="/posts/create"

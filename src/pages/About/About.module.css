@@ -11,10 +11,11 @@
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .about h1 {
-    margin-top: 100px;
+    margin: 30px 30px 0px 30px;
 }
 .about p {
     max-width: 500px;
+    margin: 0 30px;
 }
 .about a {
     display: block;

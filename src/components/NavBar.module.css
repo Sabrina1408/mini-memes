@@ -5,6 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: .5em 2em;
+    gap: 20px;
     background-color: var(--secondaryBackground);
 }
 .navbar a, .navbar button {
@@ -24,6 +25,7 @@
 
 .linksList {
     display: flex;
+    flex-wrap: wrap;
 }
 .linksList li {
     margin-right: 1em;
@@ -37,4 +39,13 @@
     background-color: var(--tertiaryBackground);
     color: var(--navHoverColor);
     border-radius: 4px;
+}
+@media (max-width: 650px) {
+    .navbar {
+        justify-content: center;
+    }
+    .linksList {
+        gap: 5px;
+        justify-content: center;
+    }
 }

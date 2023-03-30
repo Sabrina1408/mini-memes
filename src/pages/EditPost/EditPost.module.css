@@ -4,6 +4,9 @@
 .editPost p {
     color: var(--lighterBasicColor);
 }
+.editPost button {
+    margin-bottom: 30px;
+}
 .editPost .previewTitle {
     margin-bottom: 2em;
     font-weight: bold;

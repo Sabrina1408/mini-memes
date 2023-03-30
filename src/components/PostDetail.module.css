@@ -1,11 +1,14 @@
 .postDetail {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .postDetail h2 {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 .postDetail img {
-  max-width: 500px;
+  width: 500px;
   border-radius: 5px;
 }
 

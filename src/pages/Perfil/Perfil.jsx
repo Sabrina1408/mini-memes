@@ -1,5 +1,5 @@
 // CSS
-import styles from "./Dashboard.module.css";
+import styles from "./perfil.module.css";
 // React Router
 import { Link } from "react-router-dom";
 // Hooks
@@ -7,7 +7,7 @@ import { useAuthValue } from "../../context/AuthContext";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useDeleteDocument } from "../../hooks/useDeleteDocument";
 
-const Dashboard = () => {
+const Perfil = () => {
   const { user } = useAuthValue();
   const uid = user.uid;
 
@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   return (
     <div className={styles.dashboard}>
-      <h1>Dashboard</h1>
+      <h1>Perfil</h1>
       <p>Gerencie os seus posts</p>
       {posts && posts.length === 0 ? (
         <div className={styles.noPosts}>
@@ -36,33 +36,32 @@ const Dashboard = () => {
             <span>Imagem/Título</span>
             <span>Ações</span>
           </div>
-          {posts &&
-            posts.map((post) => (
-              <div key={post.id} className={styles.postRow}>
-                <div className={styles.postRowImgTitle}>
+          <div className={styles.postContent}>
+            {posts &&
+              posts.map((post) => (
+                <div key={post.id} className={styles.postRow}>
                   <img src={post.image} alt={post.title} />
-                  <p>{post.title}</p>
+                  <div className={styles.divBtn}>
+                    <Link to={`/posts/${post.id}`} className="btn">
+                      Ver
+                    </Link>
+                    <Link to={`/posts/edit/${post.id}`} className="btn">
+                      Editar
+                    </Link>
+                    <button
+                      onClick={() => deleteDocument(post.id)}
+                      className="btn btnDanger"
+                    >
+                      Excluir
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <Link to={`/posts/${post.id}`} className="btn">
-                    Ver
-                  </Link>
-                  <Link to={`/posts/edit/${post.id}`} className="btn">
-                    Editar
-                  </Link>
-                  <button
-                    onClick={() => deleteDocument(post.id)}
-                    className="btn btnDanger"
-                  >
-                    Excluir
-                  </button>
-                </div>
-              </div>
-            ))}
+              ))}
+          </div>
         </>
       )}
     </div>
   );
 };
 
-export default Dashboard;
+export default Perfil;
