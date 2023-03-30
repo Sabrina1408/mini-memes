@@ -5,7 +5,7 @@
   position: fixed;
   background-color: var(--basicColor);
   right: 50px;
-  bottom: 10%;
+  bottom: 100px;
   text-align: center;
   transition: ease-in-out .5s;
   box-shadow: 3px 3px 10px var(--gray-400);

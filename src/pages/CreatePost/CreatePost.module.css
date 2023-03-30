@@ -1,6 +1,13 @@
 .createPost {
     text-align: center;
 }
+.createPost h2 {
+    margin-top: 20px;
+}
 .createPost p {
     color: var(--lighterBasicColor);
+}
+.createPost img {
+    margin-top: 20px;
+    margin-bottom: 80px;
 }

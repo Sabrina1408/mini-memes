@@ -1,5 +1,7 @@
 //CSS
 import styles from "./CreatePost.module.css";
+// IMG
+import img from "../../assets/img/url-imagem.jpg";
 // Hook
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -120,6 +122,10 @@ const CreatePost = () => {
         )}
         {response.error && <p className="error">{response.error}</p>}
         {formError && <p className="error">{formError}</p>}
+        <h2>Como pegar a url da imagem?</h2>
+        <p>Lembrando que não é o link do site e sim o da imagem. Você pode editar depois caso queira.</p>
+        <p>Sites como WhatsApp e Instagram não fornecem a opção de pegar a imagem.</p>
+        <img src={img} alt="Explicando como pegar a URL da Imagem" />
       </form>
     </div>
   );
