@@ -1,5 +1,5 @@
 // CSS
-import styles from "./perfil.module.css";
+import styles from "./Perfil.module.css";
 // React Router
 import { Link } from "react-router-dom";
 // Hooks
