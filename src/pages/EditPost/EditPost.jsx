@@ -70,7 +70,7 @@ const EditPost = () => {
     updateDocument(id, data);
 
     // Redirect para a home page
-    navigate("/dashboard");
+    navigate("/perfil");
   };
 
   return (

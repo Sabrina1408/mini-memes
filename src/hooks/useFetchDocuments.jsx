@@ -29,7 +29,7 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
         let q;
 
         // Busca
-        // Dashboard
+        // Perfil
         
         if(search) {
           // Busca

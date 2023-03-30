@@ -20,7 +20,7 @@ const Perfil = () => {
   }
 
   return (
-    <div className={styles.dashboard}>
+    <div className={styles.perfil}>
       <h1>Perfil</h1>
       <p>Gerencie os seus posts</p>
       {posts && posts.length === 0 ? (
