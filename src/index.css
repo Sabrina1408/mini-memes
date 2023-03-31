@@ -125,3 +125,9 @@ label {
   border-radius: 4px;
   margin: 20px 0;
 }
+
+@media(max-width: 720px) {
+  form {
+    max-width: 80%;
+  }
+}

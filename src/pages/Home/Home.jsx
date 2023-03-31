@@ -32,7 +32,7 @@ const Home = () => {
         />
         <button className="btn btnDark">Pesquisar</button>
       </form>
-      <div>
+      <div className={styles.posts}>
         {loading && <p>Carregando...</p>}
         {posts && posts.map((post) => (
           <PostDetail key={post.id} post={post} />

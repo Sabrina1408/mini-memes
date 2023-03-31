@@ -36,3 +36,9 @@
   color: var(--buttonColor);
   font-size: 0.8em;
 }
+
+@media (max-width: 590px) {
+  .postDetail img  {
+    width: 100%;
+  }
+}
