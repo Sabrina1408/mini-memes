@@ -76,6 +76,7 @@ const CreatePost = () => {
             type="text"
             name="title"
             required
+            maxLength={60}
             placeholder="Digite aqui seu título..."
             onChange={(e) => setTitle(e.target.value)}
             value={title}
@@ -98,6 +99,7 @@ const CreatePost = () => {
             type="text"
             name="body"
             required
+            maxLength={1000}
             placeholder="Insira o conteúdo do post..."
             onChange={(e) => setBody(e.target.value)}
             value={body}
@@ -111,6 +113,7 @@ const CreatePost = () => {
             required
             placeholder="Insira as tags separadas por vírgula..."
             onChange={(e) => setTags(e.target.value)}
+            maxLength={40}
             value={tags}
           />
         </label>

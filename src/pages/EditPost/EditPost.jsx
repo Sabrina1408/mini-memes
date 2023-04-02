@@ -86,6 +86,7 @@ const EditPost = () => {
                 type="text"
                 name="title"
                 required
+                maxLength={60}
                 placeholder="Digite aqui seu título..."
                 onChange={(e) => setTitle(e.target.value)}
                 value={title}
@@ -110,6 +111,7 @@ const EditPost = () => {
                 type="text"
                 name="body"
                 required
+                maxLength={1000}
                 placeholder="Insira o conteúdo do post..."
                 onChange={(e) => setBody(e.target.value)}
                 value={body}
@@ -121,6 +123,7 @@ const EditPost = () => {
                 type="text"
                 name="tags"
                 required
+                maxLength={40}
                 placeholder="Insira as tags separadas por vírgula..."
                 onChange={(e) => setTags(e.target.value)}
                 value={tags}

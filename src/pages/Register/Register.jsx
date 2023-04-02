@@ -47,6 +47,7 @@ const Register = () => {
             type="text"
             name="displayName"
             required
+            maxLength={20}
             placeholder="Nome do usuário"
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}

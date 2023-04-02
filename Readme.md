@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/88604193/228046324-876d2ae6-3730-4967-bf3a-22a16709058a.png)
+![image](https://user-images.githubusercontent.com/88604193/229366971-5637bb33-80d0-4124-9b93-5017bdf0d8d1.png)
 <h1>👩🏽‍💻 Mini Memes</h1>
 <p>Este projeto consiste em uma rede social de Memes feita com React no Front-end e Firebase no Back-end. Feito pelo curso React do Zero a Maestria (c/ hooks, router, API, Projetos)</p>
 <h2>🎯 Links</h2>

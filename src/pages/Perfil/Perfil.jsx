@@ -33,7 +33,7 @@ const Perfil = () => {
       ) : (
         <>
           <div className={styles.postHeader}>
-            <span>Imagem/Título</span>
+            <span>Postagens</span>
             <span>Ações</span>
           </div>
           <div className={styles.postContent}>
